@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: redis
-  namespace: roboshop-uat
+  namespace: roboshop-sit
   # labels related to deployment resource
   labels:
     project: roboshop
@@ -31,7 +31,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: redis
-  namespace: roboshop-uat
+  namespace: roboshop-sit
   labels:
     project: roboshop
     tier: db
